@@ -22,7 +22,7 @@ public class Main implements WebApplicationInitializer {
         registration.setLoadOnStartup(1);
         registration.addMapping("/"); // Настройка маршрутизации
 
-        System.out.println("Приложение запущено!");
+        System.out.println("Приложение запущено0");
     }
 
     public static void main(String[] args) {
