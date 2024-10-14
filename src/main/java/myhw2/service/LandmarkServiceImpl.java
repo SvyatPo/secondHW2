@@ -30,7 +30,6 @@ public class LandmarkServiceImpl implements LandmarkService {
     public List<LandmarkDto> getAllLandmarks(String sortBy, String filterBy) {
         List<Landmark> landmarks = landmarkRepository.findAll();
 
-        // Здесь можно добавить логику сортировки и фильтрации
         return landmarks.stream()
                 .map(landmark -> modelMapper.map(landmark, LandmarkDto.class))
                 .collect(Collectors.toList());
